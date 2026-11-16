@@ -281,8 +281,9 @@
           <span class="eyebrow">VOICE STUDIO · GRUPO REIS</span>
           <h2>Interface no Netlify, motor na GPU</h2>
           <p>
-            A interface tem endereço fixo e o mesmo login dos painéis. O motor de voz roda numa GPU do Kaggle e é ligado
-            por um túnel com chave de API; o endereço do túnel muda a cada sessão, por isso o notebook imprime um link pronto.
+            A interface tem endereço fixo e o mesmo login dos painéis. O motor de voz roda numa GPU do Kaggle e se
+            registra sozinho na interface (por um túnel com chave de API): ninguém digita endereço, cola link nem copia chave.
+            Com o motor desligado, a interface mostra só "Aguardando o motor de voz…" e se conecta sozinha quando ele liga.
           </p>
           <div class="row-actions">
             <a class="btn btn-primary" href="https://voice-studio-grupo-reis.netlify.app" target="_blank" rel="noopener noreferrer">Abrir o Voice Studio</a>
@@ -293,18 +294,18 @@
         <div class="kaggle-radar" aria-hidden="true">
           <span class="radar-ring"></span>
           <span class="radar-core">GPU</span>
-          <span class="radar-note">Kaggle T4<br />túnel + chave</span>
+          <span class="radar-note">Kaggle T4<br />liga sozinho</span>
         </div>
       </div>
 
       <div class="kaggle-layout">
         <div class="panel">
-          <h2>Como ligar o motor</h2>
+          <h2>Como o motor liga (operação)</h2>
           <ul class="checklist">
-            <li><span>01</span> Publique o notebook do repositório no Kaggle (privado).</li>
+            <li><span>01</span> Gere a cópia <strong>privada</strong> do notebook (<code>preparar-notebook.mjs</code>) e publique no Kaggle.</li>
             <li><span>02</span> Accelerator <strong>GPU T4 x2</strong> e Internet <strong>On</strong>; rode todas as células.</li>
-            <li><span>03</span> Abra o link que a célula 5 imprime (leva o túnel e a chave desta sessão).</li>
-            <li><span>04</span> Não compartilhe o link: ele contém a chave. A sessão dura até ~9 h.</li>
+            <li><span>03</span> O notebook se registra sozinho na interface e renova o registro a cada 5 minutos.</li>
+            <li><span>04</span> Quem usa só abre o Voice Studio e entra. A sessão do Kaggle dura até ~9 h; depois o notebook precisa ser iniciado de novo.</li>
           </ul>
           <p class="hint">Keep-alive de 10 em 10 minutos: dentro do notebook, no site (bolinha de status) e script externo opcional.</p>
         </div>
