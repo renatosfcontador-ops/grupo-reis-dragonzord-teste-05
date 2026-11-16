@@ -1,0 +1,22 @@
+{
+  "project": "DragonZord Teste 5",
+  "instance": "teste-5",
+  "updatedAt": "2026-11-16",
+  "showroom": {
+    "url": "https://renatosfcontador-ops.github.io/grupo-reis-dragonzord-teste-05/",
+    "type": "github-pages",
+    "status": "pendente",
+    "httpStatus": null,
+    "verifiedAt": null
+  },
+  "backend": {
+    "tunnelUrl": null,
+    "exposed": false,
+    "note": "O motor roda num notebook do Kaggle; o túnel é criado por sessão, com chave de API obrigatória. Nenhum túnel permanente."
+  },
+  "voiceStudio": {
+    "frontend": "https://voice-studio-grupo-reis.netlify.app",
+    "repositorio": "https://github.com/renatosfcontador-ops/Voice-Studio-Grupo-Reis",
+    "fonteMatriz": "https://github.com/debpalash/VoiceStudio"
+  }
+}

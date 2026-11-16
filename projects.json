@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "project": "DragonZord Teste 5",
+    "instance": "teste-5",
+    "subtitle": "Voice Studio · Grupo Reis: interface no Netlify e motor de voz em GPU (Kaggle)",
+    "source": "Voice Studio (debpalash/VoiceStudio), com cordão umbilical ativo",
+    "version": "1.0.0",
+    "pagesUrl": "https://renatosfcontador-ops.github.io/grupo-reis-dragonzord-teste-05/",
+    "updatedAt": "2026-11-16"
+  },
+  "categories": [
+    {
+      "id": "audio",
+      "label": "Voz & Áudio",
+      "short": "Áudio",
+      "description": "Síntese de voz, clonagem, design de voz, dublagem e transcrição"
+    }
+  ],
+  "compliance": {
+    "green": {
+      "label": "Sinal Verde",
+      "title": "100% liberado",
+      "meaning": "Licenças permissivas abertas (MIT, Apache 2.0, BSD).",
+      "action": "Comercialização livre, alteração de marca, templates e empacotamento completo como solução própria do Grupo Reis."
+    },
+    "yellow": {
+      "label": "Sinal Amarelo",
+      "title": "Permitido com ressalvas",
+      "meaning": "Licenças que exigem créditos, restrições a fins não comerciais em pesos específicos ou copyleft moderado (MPL 2.0).",
+      "action": "Comercialização permitida com white-label, atribuição obrigatória e verificação de faturamento/escala."
+    },
+    "red": {
+      "label": "Sinal Vermelho",
+      "title": "Proibido para comercialização direta",
+      "meaning": "Repositórios restritos à pesquisa, uso pessoal ou com patentes que impeçam exploração comercial sem contrato dedicado.",
+      "action": "Uso restrito a homologação interna no Kaggle Sandbox e testes de bancada. Proibida revenda ou empacotamento comercial direto."
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "Voice Studio · Grupo Reis",
+      "category": "audio",
+      "description": "Estúdio de voz (clonagem, design de voz, dublagem, transcrição). Interface fixa no Netlify; motor em GPU do Kaggle ligado por túnel com chave de API. Clonar voz exige consentimento prévio e por escrito.",
+      "repoUrl": "https://github.com/debpalash/VoiceStudio",
+      "demoUrl": "https://voice-studio-grupo-reis.netlify.app",
+      "videoUrl": null,
+      "kaggleUrl": null,
+      "embedUrl": null,
+      "embeddable": false,
+      "status": "pendente",
+      "tags": [
+        "voz",
+        "clonagem",
+        "tts",
+        "gpu",
+        "kaggle",
+        "netlify",
+        "agpl"
+      ],
+      "license": "AGPL-3.0",
+      "compliance": "yellow",
+      "complianceNote": "AGPL-3.0: pode rodar como serviço separado com o código-fonte público (repositório do Grupo Reis). Não fundir a código fechado sem parecer jurídico. Clonagem de voz exige consentimento prévio e por escrito (ver docs/COMPLIANCE-VOZ.md).",
+      "frontend": {
+        "hasUI": true,
+        "kind": "web",
+        "label": "Interface web (Netlify)",
+        "localUrl": "https://voice-studio-grupo-reis.netlify.app",
+        "runCommand": "",
+        "note": "O motor roda numa GPU do Kaggle. Rode o notebook e abra o link que ele imprime no final."
+      }
+    }
+  ]
+}
